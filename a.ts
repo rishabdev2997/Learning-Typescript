@@ -16,3 +16,11 @@ function isLegal(age: number):boolean{
 
 let x = isLegal(19);
 console.log(x);
+
+function runAfter1S(fn: () => void){
+    setTimeout(fn,1000);
+}
+
+runAfter1S(function(){
+    console.log("hi there");
+})
